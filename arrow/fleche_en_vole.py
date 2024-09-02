@@ -2,10 +2,12 @@ def scene( speed, distance, etape):
     field = list("."*distance)
     field[distance - 1] = 'C'
     if (speed*etape < distance):
-        field[speed*etape] = 'F'
+        field[speed*etape] = '>'
     else:
-        field[:-1] = 'F'
-    print(field)
+        field[:-1] = '>'
+    for i  in range(distance):
+        print(field[i], end = '')
+    print("\n")
 
 
 
