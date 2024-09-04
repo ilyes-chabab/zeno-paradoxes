@@ -7,11 +7,11 @@ def paradoxDichotomy(initialDistance, tolerance):
         steps += 1
         remainingDistance /= 2
         distanceTravelled += remainingDistance
-        print(f"Étape {steps}: Distance restante = {remainingDistance:.10f}, Distance parcourue = {distanceTravelled:.10f}")
+        print(f"Step {steps}: Remaining distance = {remainingDistance:.10f}, Distance travelled = {distanceTravelled:.10f}")
     
-    print(f"\nRésultat final:")
-    print(f"Nombre d'étapes nécessaires : {steps}")
-    print(f"Distance totale parcourue : {distanceTravelled:.10f}")
+    print(f"\nFinal result:")
+    print(f"Steps neccesary : {steps}")
+    print(f"Total distance covered : {distanceTravelled:.10f}")
 
 # Parameters
 initialDistance = 1.0  # Total distance to cover
