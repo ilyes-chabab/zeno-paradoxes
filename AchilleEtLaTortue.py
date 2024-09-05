@@ -2,7 +2,7 @@ import math
 import pygame
 
 # suite convergeante = u de n = 1:n
-def Da_et_la_Dt(step):
+def run_achille_tortue(step):
     # initial distance
     Da = 2
     Dt = 502
@@ -31,7 +31,7 @@ def line_maker(screen, step, imageA, imageT):
     y = 180
     n = 0
     for i in range(step):
-        Da, Dt, gap = Da_et_la_Dt(n)
+        Da, Dt, gap = run_achille_tortue(n)
         pygame.draw.line(screen, (0, 0, 0), (x1, y), (x2, y), 2)
         screen.blit(imageA, (Da + x1, y))
         screen.blit(imageT, (Dt + x1, y))
@@ -80,20 +80,11 @@ def main_achille_et_la_tortue():
                 running = False
             if event.type == pygame.KEYDOWN:
                 start = True
-        if start:
-            line_maker(screen, step, AchilleImage, TortueImage)
-        if not start:
-            message(
-                screen,
-                25,
-                "Appuyez sur n'importe quelle touche du clavier pour afficher la simulation",
-                (350, 55, 0, 0),
-                (0, 0, 0),
-            )
+        line_maker(screen, step, AchilleImage, TortueImage)
 
         pygame.display.flip()
 
 
 if __name__ == "__main__":
     main_achille_et_la_tortue()
-    # Da_et_la_Dt(20)
+    # run_achille_tortue(20)
