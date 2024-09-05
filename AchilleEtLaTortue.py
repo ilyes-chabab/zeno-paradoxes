@@ -71,7 +71,7 @@ def main_achille_et_la_tortue():
         message(
             screen,
             25,
-            "time par ligne : 1s , distance total : 1120 pixels ,vitesse initial d'Achille et de la Tortue' : 1000 et 500 pixels par seconde ",
+            "time par ligne : 1s , distance total : 1120 pixels ,vitesse initial d'Achille et de la Tortue' : 1000 et 500 pixels",
             (10, 100, 0, 0),
             (0, 0, 0),
         )
