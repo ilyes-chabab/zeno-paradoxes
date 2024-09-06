@@ -1,5 +1,6 @@
 import pygame
-from AchilleEtLaTortue import  main_achille_et_la_tortue
+from AchilleEtLaTortue import main_achille_et_la_tortue
+
 
 # func to write on the screen with pygame
 def message(screen, size, message, message_rectangle, color):
