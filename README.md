@@ -18,7 +18,7 @@ Dans ses réflexions, Zenon imagine Achille, le héros au pied léger, engagé d
 
 ![interface graphique du paradoxe](./image/AchilleEtLaTortue.png)
 
-# 2 eme paradoxe : 
+# 2 ème paradoxe : 
 
 Le paradoxe de dichotomie :
 
@@ -27,7 +27,7 @@ pierre doive accomplir une infinité d'étapes, ce qui, aux yeux de Zénon, déf
 
 ![interface graphique du paradoxe de dichotomie](./image/paradoxe_dichotomie.png)
 
-# 3 eme paradoxe : 
+# 3 ème paradoxe : 
 
 Le paradoxe de la flèche : 
 
