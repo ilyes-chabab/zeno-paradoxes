@@ -33,7 +33,7 @@ def blit_arrow(screen, step, imageArrow, imageTarget):
     for i in range(step):
         n += 1
         Darrow, gap = shoot(n)
-        screen.blit(imageTarget, (950, y_biche))
+        screen.blit(imageTarget, (880, y_biche))
         screen.blit(imageArrow, (Darrow, y_arrow))
         message(screen, 20, f"gap : {gap} pixels", (0, y_arrow - 25), (0, 0, 0))
         y_arrow += 120
@@ -57,7 +57,7 @@ def main_arrow():
 
     # init image
     TargetInit = pygame.image.load("image/Biche.jpeg")
-    TargetImage = pygame.transform.scale(TargetInit, (90, 110))
+    TargetImage = pygame.transform.scale(TargetInit, (200, 110))
     ArrowInit = pygame.image.load("image/Arrow.png")
     ArrowImage = pygame.transform.scale(ArrowInit, (150, 30))
 
