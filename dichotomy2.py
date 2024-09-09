@@ -9,7 +9,7 @@ def paradoxDichotomy(initialDistance, tolerance):
         remainingDistance /= 2
         distanceTravelled += remainingDistance
         l.append(remainingDistance)
-        print(l)
+        # print(l)
     return l
         # if mode == "GUI":
         #     for i in range(20):
@@ -31,6 +31,6 @@ tolerance = 0.00240  # Tolerance to stop the simulation
 
 if __name__ == "__main__":
 
-    # paradoxDichotomy(initialDistance, tolerance, mode='CLI') # Calling the function
+    paradoxDichotomy(initialDistance, tolerance, mode='CLI') # Calling the function
 
-    print(paradoxDichotomy(initialDistance, tolerance))
+    # print(paradoxDichotomy(initialDistance, tolerance))
