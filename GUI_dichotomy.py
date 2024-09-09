@@ -10,9 +10,9 @@ def main_dichotomy():
 
     surf = pygame.display.set_mode((1200,600))
     surf.fill((255, 255, 255))  # Setting background color on white
-    tree = pygame.image.load("pictures/arbre-removebg-preview.png").convert_alpha()
+    tree = pygame.image.load("image/arbre-removebg-preview.png").convert_alpha()
     newTree = pygame.transform.scale(tree, (350, 300))
-    rock = pygame.image.load("pictures/cercle.png").convert_alpha()
+    rock = pygame.image.load("image/cercle.png").convert_alpha()
     newRock = pygame.transform.scale(rock, (150, 100))
     run = True
     while run:

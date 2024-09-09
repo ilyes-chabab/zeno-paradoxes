@@ -17,6 +17,23 @@ Dans ses réflexions, Zenon imagine Achille, le héros au pied léger, engagé d
 
 ![interface graphique du paradoxe](./image/AchilleEtLaTortue.png)
 
+# 2 ème paradoxe :
+
+Le paradoxe de la dichotomie :
+Imaginez que Zénon se trouve face à un arbre imposant, tenant
+fermement une pierre dans sa main. Sa tentative de toucher l'arbre en
+lançant la pierre se heurte à un paradoxe intrigant. Selon sa réflexion, la
+pierre doit franchir la moitié de la distance totale de 8 mètres pour
+atteindre l'arbre, soit 4 mètres.
+Ensuite, celle-ci doit parcourir des distances réduites successives : deux
+mètres, un mètre, et ainsi de suite, chaque étape prenant un temps fini.
+Cette progression ininterrompue amène Zénon à une conclusion : la
+pierre ne peut jamais atteindre l'arbre. Il semblerait que pour ce faire, la
+pierre doive accomplir une infinité d'étapes, ce qui, aux yeux de Zénon,
+défie toute logique.
+
+
+
 
 
 
