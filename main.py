@@ -1,5 +1,5 @@
 import pygame
-from Achille_CLI import main_achille_et_la_tortue
+from Achille_GUI import main_achille_et_la_tortue
 from Dichotomy_GUI import main_dichotomy
 from Arrow_GUI import main_arrow
 

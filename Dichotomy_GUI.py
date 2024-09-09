@@ -1,5 +1,17 @@
 import pygame
-from Dichotomy_CLI import paradoxDichotomy
+
+def paradoxDichotomy(initialDistance, tolerance):
+    remainingDistance = initialDistance
+    distanceTravelled = 0
+    steps = 0
+    l = []
+
+    while remainingDistance > tolerance:
+        steps += 1
+        remainingDistance /= 2
+        distanceTravelled += remainingDistance
+        l.append(remainingDistance)
+    return l
 
 
 def main_dichotomy():
@@ -9,7 +21,7 @@ def main_dichotomy():
     tolerance = 0.000240
 
     surf = pygame.display.set_mode((1200,600))
-    surf.fill((255, 255, 255))  # Setting background color on white
+    surf.fill((255, 255, 255))
     tree = pygame.image.load("image/arbre-removebg-preview.png").convert_alpha()
     newTree = pygame.transform.scale(tree, (350, 300))
     rock = pygame.image.load("image/cercle.png").convert_alpha()
@@ -21,10 +33,12 @@ def main_dichotomy():
                 run = False
             surf.blit(newTree, (500, 150))
             l = paradoxDichotomy(initialDistance, tolerance)
-            initialPosition = 600
-            surf.blit(newRock, (initialPosition, 250))
+            initialPosition = 500
+            # surf.blit(newRock, (initialPosition, 250))
             for i in l:
                 surf.blit(newRock, (initialPosition - i, 250))
+                pygame.display.flip()
+                pygame.time.wait(1000)
             pygame.display.flip()
     pygame.quit()
 
