@@ -1,12 +1,12 @@
 import pygame
 from dichotomy2 import paradoxDichotomy
 
+
 def main_dichotomy():
     pygame.init()
 
     initialDistance = 800
     tolerance = 0.000240
-
 
     surf = pygame.display.set_mode((1200, 600))
     surf.fill((255, 255, 255))  # Setting background color on white
@@ -24,6 +24,6 @@ def main_dichotomy():
             initialPosition = 600
             surf.blit(newRock, (initialPosition, 250))
             for i in l:
-                surf.blit(newRock, (initialPosition - i,250))
+                surf.blit(newRock, (initialPosition - i, 250))
             pygame.display.flip()
     pygame.quit()

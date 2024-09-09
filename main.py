@@ -25,15 +25,12 @@ def main_pygame():
     DichotomyButton = pygame.draw.rect(screen, (0, 0, 0), (400, 200, 300, 100))
     DichotomyText = police.render("Dichotomy", 1, (0, 0, 0))
 
-    ArrowButton = pygame.draw.rect(screen,(0, 0, 0), (750, 200, 300, 100))
+    ArrowButton = pygame.draw.rect(screen, (0, 0, 0), (750, 200, 300, 100))
     ArrowText = police.render("Arrow", 1, (0, 0, 0))
-
-    
 
     # boucle for pygame
     while running:
         screen.fill((255, 255, 255))
-
 
         pygame.draw.rect(screen, (255, 0, 0), (50, 200, 300, 100))
         screen.blit(AchilleEtLaTortueText, (60, 250))
@@ -44,18 +41,16 @@ def main_pygame():
         pygame.draw.rect(screen, (255, 0, 0), (750, 200, 300, 100))
         screen.blit(ArrowText, (750, 250))
 
-
-        
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 running = False
             if event.type == pygame.MOUSEBUTTONDOWN:
                 if AchilleEtLaTortueButton.collidepoint(event.pos):
                     main_achille_et_la_tortue()
-                
+
                 elif DichotomyButton.collidepoint(event.pos):
                     main_dichotomy()
-                
+
                 elif ArrowButton.collidepoint(event.pos):
                     main_arrow()
 
