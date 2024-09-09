@@ -1,6 +1,7 @@
 import pygame
 from Achille_CLI import main_achille_et_la_tortue
 from GUI_dichotomy import main_dichotomy
+from Arrow_GUI import main_arrow
 
 
 # func to write on the screen with pygame
@@ -24,6 +25,9 @@ def main_pygame():
     DichotomyButton = pygame.draw.rect(screen, (0, 0, 0), (400, 200, 300, 100))
     DichotomyText = police.render("Dichotomy", 1, (0, 0, 0))
 
+    ArrowButton = pygame.draw.rect(screen,(0, 0, 0), (750, 200, 300, 100))
+    ArrowText = police.render("Arrow", 1, (0, 0, 0))
+
     
 
     # boucle for pygame
@@ -37,6 +41,9 @@ def main_pygame():
         pygame.draw.rect(screen, (255, 0, 0), (400, 200, 300, 100))
         screen.blit(DichotomyText, (400, 250))
 
+        pygame.draw.rect(screen, (255, 0, 0), (750, 200, 300, 100))
+        screen.blit(ArrowText, (750, 250))
+
 
         
         for event in pygame.event.get():
@@ -48,8 +55,9 @@ def main_pygame():
                 
                 elif DichotomyButton.collidepoint(event.pos):
                     main_dichotomy()
-
-
+                
+                elif ArrowButton.collidepoint(event.pos):
+                    main_arrow()
 
         pygame.display.flip()
 

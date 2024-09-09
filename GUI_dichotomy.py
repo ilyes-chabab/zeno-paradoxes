@@ -8,7 +8,7 @@ def main_dichotomy():
     tolerance = 0.000240
 
 
-    surf = pygame.display.set_mode((800, 600))
+    surf = pygame.display.set_mode((1200, 600))
     surf.fill((255, 255, 255))  # Setting background color on white
     tree = pygame.image.load("pictures/arbre-removebg-preview.png").convert_alpha()
     newTree = pygame.transform.scale(tree, (350, 300))
