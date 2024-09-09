@@ -20,7 +20,7 @@ def main_pygame():
     police = pygame.font.SysFont("arial", 30)
 
     AchilleEtLaTortueButton = pygame.draw.rect(screen, (0, 0, 0), (50, 200, 300, 100))
-    AchilleEtLaTortueText = police.render("Achille et la tortue", 1, (0, 0, 0))
+    AchilleEtLaTortueText = police.render("Achille and the turtle", 1, (0, 0, 0))
 
     DichotomyButton = pygame.draw.rect(screen, (0, 0, 0), (400, 200, 300, 100))
     DichotomyText = police.render("Dichotomy", 1, (0, 0, 0))
